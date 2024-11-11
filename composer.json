@@ -1,0 +1,19 @@
+{
+    "name": "yourname/codeigniter-app",
+    "description": "A CodeIgniter application in a Docker container.",
+    "type": "project",
+    "require": {
+        "php": "^7.4",
+        "codeigniter/framework": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "application/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist"
+    }
+}
+
