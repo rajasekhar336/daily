@@ -1,6 +1,9 @@
 # Use official PHP 7.4 image with Apache
 FROM php:7.4-apache
 
+# Copy php.ini
+COPY php.ini /usr/local/etc/php/
+
 # Install necessary PHP extensions
 RUN apt-get update && apt-get install -y \
     libpng-dev \
